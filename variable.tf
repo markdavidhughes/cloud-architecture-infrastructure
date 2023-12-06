@@ -1,4 +1,4 @@
 variable "location" {}
-variable "connectivityname" {
-  
-}
+variable "connectivityname" {}
+variable "managementname" {}
+variable "identityname" {}

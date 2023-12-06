@@ -1,4 +1,2 @@
 variable "location" {}
-variable "connectivityname" {
-  
-}
+variable "connectivityname" {}
