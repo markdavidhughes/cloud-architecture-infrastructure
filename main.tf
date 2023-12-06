@@ -4,4 +4,5 @@ module "connectivity" {
     azurerm = azurerm.MSDN
   }
   location = var.location
+  connectivityname = var.connectivityname
 }
