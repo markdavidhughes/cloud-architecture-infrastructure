@@ -7,7 +7,7 @@ terraform {
 }
 
 provider "azurerm" {
-  alias           = "MSDN"
-  subscription_id = "efe3ac6c-dce5-44b1-9e9f-0d995b980e93"
+  alias           = var.alias
+  subscription_id = var.subscription_id
   features {}
 }
