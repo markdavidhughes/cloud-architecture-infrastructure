@@ -1,4 +1,4 @@
 resource "azurerm_resource_group" "identity" {
-  name     = var.identityname
+  name     = var.identity_resource_group_name
   location = var.location
 }

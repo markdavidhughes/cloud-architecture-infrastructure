@@ -1,5 +1,12 @@
 variable "location" {}
-variable "connectivityname" {}
-variable "managementname" {}
-variable "identityname" {}
+variable "connectivity_resource_group_name" {}
+variable "management_resource_group_name" {}
+variable "identity_resource_group_name" {}
 variable "subscription_id" {}
+variable "vnet_hub_name" {}
+variable "vnet_hub_address_space" {}
+variable "vnet_hub_dns_space" {}
+variable "vnet_hub_snet_name" {}
+variable "vnet_hub_snet_range" {}
+variable "nsg_name" {}
+variable "nsg_security_rule_rdp_name" {}

@@ -4,7 +4,14 @@ module "connectivity" {
     azurerm = azurerm.MSDN
   }
   location         = var.location
-  connectivityname = var.connectivityname
+  connectivity_resource_group_name = var.connectivity_resource_group_name
+  vnet_hub_name = var.vnet_hub_name
+  vnet_hub_address_space = var.vnet_hub_address_space
+  vnet_hub_dns_space = var.vnet_hub_dns_space
+  vnet_hub_snet_name = var.vnet_hub_snet_name
+vnet_hub_snet_range = var.vnet_hub_snet_range
+nsg_name = var.nsg_name
+nsg_security_rule_rdp_name = var.nsg_security_rule_rdp_name
 }
 
 module "identity" {
@@ -13,7 +20,7 @@ module "identity" {
     azurerm = azurerm.MSDN
   }
   location     = var.location
-  identityname = var.identityname
+  identity_resource_group_name = var.identity_resource_group_name
 }
 
 module "management" {
@@ -22,5 +29,5 @@ module "management" {
     azurerm = azurerm.MSDN
   }
   location       = var.location
-  managementname = var.managementname
+  management_resource_group_name = var.management_resource_group_name
 }
