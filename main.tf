@@ -21,6 +21,7 @@ module "identity" {
   }
   location                     = var.location
   identity_resource_group_name = var.identity_resource_group_name
+  vnet_hub_snet_id = module.connectivity.vnet_hub_snet_id
 }
 
 module "management" {

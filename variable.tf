@@ -10,3 +10,4 @@ variable "vnet_hub_snet_name" {}
 variable "vnet_hub_snet_range" {}
 variable "nsg_name" {}
 variable "nsg_security_rule_rdp_name" {}
+#variable "vnet_hub_snet_id" {}
